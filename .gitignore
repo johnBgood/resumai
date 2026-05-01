@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated resume HTML — tracked intentionally (gitkeep keeps the folder)
+# individual HTML files are tracked so you can re-export PDF without regenerating
