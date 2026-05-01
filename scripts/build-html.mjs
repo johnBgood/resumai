@@ -9,6 +9,9 @@ const theme = process.argv[2] ?? 'minimal'
 const photoB64 = readFileSync(join(root, 'public/photo.jpeg')).toString('base64')
 const photoSrc = `data:image/jpeg;base64,${photoB64}`
 
+const iconPin = `<svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-bottom:1px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`
+const iconGlobe = `<svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-bottom:1px"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`
+
 const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -198,13 +201,24 @@ const html = `<!DOCTYPE html>
   .job-company { color: var(--accent); }
 
   .job-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     font-size: 7pt;
     color: #fff;
     background: var(--navy-mid);
-    padding: 1px 6px;
+    padding: 2px 8px;
     border-radius: 8px;
     white-space: nowrap;
     flex-shrink: 0;
+  }
+
+  .badge-sep { opacity: 0.35; }
+
+  .badge-item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
   }
 
   .job ul { list-style: none; padding: 0; }
@@ -327,7 +341,7 @@ const html = `<!DOCTYPE html>
       <div class="job">
         <div class="job-header">
           <span class="job-title">Tech Lead — <span class="job-company">Camunda</span></span>
-          <span class="job-badge">Feb 2024 – Present · Berlin (remote)</span>
+          <span class="job-badge">Feb 2024 – Present <span class="badge-sep">·</span> <span class="badge-item">${iconPin}Berlin</span> <span class="badge-sep">·</span> <span class="badge-item">${iconGlobe}Remote</span></span>
         </div>
         <ul>
           <li>Led <strong>P0 Job Worker Dashboard</strong> epic (<strong>3-person team</strong>, ~3 months) — became <strong>top committer on the Core monorepo</strong> despite it not being primary focus</li>
@@ -341,7 +355,7 @@ const html = `<!DOCTYPE html>
       <div class="job">
         <div class="job-header">
           <span class="job-title">Sr. Technical Lead — <span class="job-company">Alva Labs</span></span>
-          <span class="job-badge">May 2022 – Feb 2024 · Stockholm (remote)</span>
+          <span class="job-badge">May 2022 – Feb 2024 <span class="badge-sep">·</span> <span class="badge-item">${iconPin}Stockholm</span> <span class="badge-sep">·</span> <span class="badge-item">${iconGlobe}Remote</span></span>
         </div>
         <ul>
           <li>Resolved engineering-wide issues: <strong>developer experience</strong>, broken cross-team processes with design and support</li>
@@ -352,7 +366,7 @@ const html = `<!DOCTYPE html>
       <div class="job">
         <div class="job-header">
           <span class="job-title">Co-founder &amp; CTO — <span class="job-company">Clozzle</span></span>
-          <span class="job-badge">Sep 2020 – May 2022 · Toulouse (remote)</span>
+          <span class="job-badge">Sep 2020 – May 2022 <span class="badge-sep">·</span> <span class="badge-item">${iconPin}Toulouse</span> <span class="badge-sep">·</span> <span class="badge-item">${iconGlobe}Remote</span></span>
         </div>
         <ul>
           <li>Defined and executed <strong>product roadmap</strong>; built full stack on <strong>AWS</strong> (Lambda, EC2, Cognito) with Quarkus native (Java, Spring WebFlux)</li>
@@ -362,7 +376,7 @@ const html = `<!DOCTYPE html>
       <div class="job">
         <div class="job-header">
           <span class="job-title">Technical Lead — <span class="job-company">Nanolike</span></span>
-          <span class="job-badge">Nov 2018 – Sep 2020 · Toulouse (remote)</span>
+          <span class="job-badge">Nov 2018 – Sep 2020 <span class="badge-sep">·</span> <span class="badge-item">${iconPin}Toulouse</span> <span class="badge-sep">·</span> <span class="badge-item">${iconGlobe}Remote</span></span>
         </div>
         <ul>
           <li>Designed <strong>microservices architecture</strong> (Kafka, Docker, AWS); owned product development, team organisation, and sprint execution</li>
@@ -372,7 +386,7 @@ const html = `<!DOCTYPE html>
       <div class="job">
         <div class="job-header">
           <span class="job-title">Software Architect — <span class="job-company">Sigfox</span></span>
-          <span class="job-badge">Sep 2013 – Nov 2018 · Toulouse</span>
+          <span class="job-badge">Sep 2013 – Nov 2018 <span class="badge-sep">·</span> <span class="badge-item">${iconPin}Toulouse</span></span>
         </div>
         <ul>
           <li>Designed scalable microservices (Java, MongoDB, Prometheus, Grafana) handling <strong>5B metrics/day</strong></li>
