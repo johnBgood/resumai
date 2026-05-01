@@ -68,13 +68,13 @@ Looking for a remote Tech Lead role where technical depth and ownership matter.
 
 ---
 
-### Engineering Manager — Nanolike  
+### Tech Lead — Nanolike  
 **11/2018 – 09/2020** — Toulouse (remote), France  
-*IoT startup — smart sensors for industrial silo monitoring (grain, cement, chemicals)*  
+*IoT startup — smart sensors for industrial fill-level monitoring (silos, tanks)*  
 
 - Designed backend roadmap and microservices architecture (Kafka, Docker, AWS)
-- Managed product development, team organization, costing, 1:1s, sprint execution
-- Maintained existing backend and delivered new features
+- Built the monitoring frontend from scratch — real-time device dashboard with fill-level visualization
+- Pioneered the silo monitoring product line, which became the company's new core offering
 
 ---
 

@@ -391,12 +391,13 @@ const html = `<!DOCTYPE html>
 
       <div class="job">
         <div class="job-header">
-          <span class="job-title">Engineering Manager — <span class="job-company">Nanolike</span></span>
+          <span class="job-title">Tech Lead — <span class="job-company">Nanolike</span></span>
           <span class="job-badge">Nov 2018 – Sep 2020 <span class="badge-sep">·</span> <span class="badge-item">${iconPin}Toulouse</span> <span class="badge-sep">·</span> <span class="badge-item">${iconGlobe}Remote</span></span>
         </div>
-        <div class="job-desc">IoT startup — smart sensors for industrial silo monitoring (grain, cement, chemicals)</div>
+        <div class="job-desc">IoT startup — smart sensors for industrial fill-level monitoring (silos, tanks)</div>
         <ul>
-          <li>Designed <strong>microservices architecture</strong> (Kafka, Docker, AWS); owned product development, team organisation, and sprint execution</li>
+          <li>Designed <strong>microservices architecture</strong> (Kafka, Docker, AWS) and built the <strong>monitoring frontend from scratch</strong> — real-time device dashboard with fill-level visualization</li>
+          <li>Pioneered the <strong>silo monitoring product line</strong>, which became the company's new core offering</li>
         </ul>
       </div>
 
