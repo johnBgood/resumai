@@ -431,5 +431,5 @@ const html = `<!DOCTYPE html>
 </body>
 </html>`
 
-writeFileSync(join(root, 'generated/base/resume.html'), html)
-console.log('HTML written to generated/base/resume.html')
+writeFileSync(join(root, 'generated/base/base-resume.html'), html)
+console.log('HTML written to generated/base/base-resume.html')

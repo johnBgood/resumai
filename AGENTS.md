@@ -21,11 +21,11 @@ resumes/
       kestra-build-html.mjs   ← Kestra HTML builder
 generated/
   base/
-    resume.html
-    resume.pdf
+    base-resume.html
+    base-resume.pdf
   kestra/
-    resume.html
-    resume.pdf
+    kestra-resume.html
+    kestra-resume.pdf
 scripts/
   generate-pdf.mjs     ← shared Puppeteer PDF converter
 ```
@@ -44,8 +44,8 @@ node scripts/generate-pdf.mjs base
 This produces:
 
 ```text
-generated/base/resume.html
-generated/base/resume.pdf
+generated/base/base-resume.html
+generated/base/base-resume.pdf
 ```
 
 ## How to generate the Kestra resume
@@ -60,20 +60,20 @@ node scripts/generate-pdf.mjs kestra
 This produces:
 
 ```text
-generated/kestra/resume.html
-generated/kestra/resume.pdf
+generated/kestra/kestra-resume.html
+generated/kestra/kestra-resume.pdf
 ```
 
 After generation, verify the PDF is valid and ideally one page:
 
 ```zsh
-file generated/kestra/resume.pdf
+file generated/kestra/kestra-resume.pdf
 ```
 
 If `pdfinfo` is available:
 
 ```zsh
-pdfinfo generated/kestra/resume.pdf | grep '^Pages:'
+pdfinfo generated/kestra/kestra-resume.pdf | grep '^Pages:'
 ```
 
 ## Adding a new application
@@ -104,7 +104,7 @@ Use lowercase kebab-case slugs, e.g. `kestra`, `acme-platform-lead`, `datadog-ba
 4. The builder should write:
 
    ```text
-   generated/<slug>/resume.html
+   generated/<slug>/<slug>-resume.html
    ```
 
 5. Generate the PDF with:

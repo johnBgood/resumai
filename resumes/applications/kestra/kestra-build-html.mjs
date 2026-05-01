@@ -192,6 +192,6 @@ ${baseStyles}
 </body>
 </html>`
 
-writeFileSync(join(root, 'generated/kestra/resume.html'), html)
-console.log('HTML written to generated/kestra/resume.html')
+writeFileSync(join(root, 'generated/kestra/kestra-resume.html'), html)
+console.log('HTML written to generated/kestra/kestra-resume.html')
 
