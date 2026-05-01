@@ -31,7 +31,7 @@ const html = `<!DOCTYPE html>
 
   body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 9pt;
+    font-size: 9.5pt;
     line-height: 1.45;
     color: var(--text);
     background: #fff;
@@ -48,10 +48,10 @@ const html = `<!DOCTYPE html>
   .sidebar {
     width: 68mm;
     background: var(--navy);
-    padding: 10mm 7mm 10mm 7mm;
+    padding: 9mm 7mm 9mm 7mm;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     flex-shrink: 0;
   }
 
@@ -114,7 +114,7 @@ const html = `<!DOCTYPE html>
   }
 
   .contact-list li {
-    font-size: 7.5pt;
+    font-size: 8pt;
     color: var(--sidebar-text);
     line-height: 1.35;
     word-break: break-all;
@@ -133,7 +133,7 @@ const html = `<!DOCTYPE html>
     display: inline-block;
     background: rgba(74,144,217,0.18);
     color: var(--sidebar-text);
-    font-size: 7.5pt;
+    font-size: 8pt;
     padding: 2px 7px;
     border-radius: 10px;
     margin: 2px 2px 0 0;
@@ -143,10 +143,10 @@ const html = `<!DOCTYPE html>
   /* ─── MAIN ────────────────────────────────── */
   .main {
     flex: 1;
-    padding: 10mm 10mm 8mm 9mm;
+    padding: 9mm 9mm 7mm 8mm;
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 7px;
   }
 
   .section-title {
@@ -174,12 +174,12 @@ const html = `<!DOCTYPE html>
   }
 
   .profile p {
-    font-size: 8.5pt;
+    font-size: 9pt;
     color: var(--text-soft);
-    line-height: 1.55;
+    line-height: 1.5;
   }
 
-  .job { margin-bottom: 7px; }
+  .job { margin-bottom: 6px; }
   .job:last-child { margin-bottom: 0; }
 
   .job-header {
@@ -190,7 +190,7 @@ const html = `<!DOCTYPE html>
   }
 
   .job-title {
-    font-size: 9.5pt;
+    font-size: 10pt;
     font-weight: 700;
     color: var(--text);
   }
@@ -210,9 +210,9 @@ const html = `<!DOCTYPE html>
   .job ul { list-style: none; padding: 0; }
 
   .job ul li {
-    font-size: 8.5pt;
+    font-size: 9pt;
     color: var(--text-soft);
-    padding: 0.8px 0 0.8px 11px;
+    padding: 0.5px 0 0.5px 11px;
     position: relative;
     line-height: 1.4;
   }
@@ -233,7 +233,7 @@ const html = `<!DOCTYPE html>
   }
 
   .edu-degree {
-    font-size: 9.5pt;
+    font-size: 10pt;
     font-weight: 700;
     color: var(--text);
   }
