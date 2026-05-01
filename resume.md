@@ -22,7 +22,7 @@ Looking for a remote Tech Lead role where technical depth and ownership matter.
 ### Technical
 - Micro-services architecture
 - Cloud providers: GCP, AWS
-- Kubernetes, Docker, Kafka
+- Kubernetes, Docker, Kafka, Terraform
 - Design patterns & code quality
 
 ### Languages & Frameworks
@@ -62,7 +62,7 @@ Looking for a remote Tech Lead role where technical depth and ownership matter.
 **09/2020 – 05/2022** — Toulouse (remote), France  
 *Real estate SaaS startup — tools for property professionals*  
 
-- Defined and executed the product roadmap over 1 year
+- Defined and executed the product roadmap from 0 to 1
 - Built infrastructure on AWS (Lambda, EC2, Cognito)
 - Developed frontend and backend using Quarkus native (Java, Spring WebFlux)
 
@@ -83,10 +83,7 @@ Looking for a remote Tech Lead role where technical depth and ownership matter.
 *Global IoT network operator — 1B+ connected objects across 70 countries*  
 
 - Designed scalable and highly available microservices architecture (Java, MongoDB, Prometheus, Grafana)
-- Reduced bandwidth consumption by 50% and increased device monitoring capacity x10
-- Handled up to 5 billion metrics per day
-- Led architecture design, cost management, and system scalability
-- Managed critical systems: message reception, storage, and transfer
+- Reduced bandwidth consumption by 50%, increased device monitoring capacity ×10, handling up to 5B metrics/day
 - Designed and implemented RBAC system; trained team on new concepts
 
 ---
