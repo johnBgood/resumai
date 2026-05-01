@@ -354,7 +354,7 @@ const html = `<!DOCTYPE html>
 
       <div class="job">
         <div class="job-header">
-          <span class="job-title">Sr. Technical Lead — <span class="job-company">Alva Labs</span></span>
+          <span class="job-title">Sr. Engineering Manager — <span class="job-company">Alva Labs</span></span>
           <span class="job-badge">May 2022 – Feb 2024 <span class="badge-sep">·</span> <span class="badge-item">${iconPin}Stockholm</span> <span class="badge-sep">·</span> <span class="badge-item">${iconGlobe}Remote</span></span>
         </div>
         <ul>
@@ -375,7 +375,7 @@ const html = `<!DOCTYPE html>
 
       <div class="job">
         <div class="job-header">
-          <span class="job-title">Technical Lead — <span class="job-company">Nanolike</span></span>
+          <span class="job-title">Engineering Manager — <span class="job-company">Nanolike</span></span>
           <span class="job-badge">Nov 2018 – Sep 2020 <span class="badge-sep">·</span> <span class="badge-item">${iconPin}Toulouse</span> <span class="badge-sep">·</span> <span class="badge-item">${iconGlobe}Remote</span></span>
         </div>
         <ul>

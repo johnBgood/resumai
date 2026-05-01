@@ -45,7 +45,7 @@ Can provide references.
 
 ---
 
-### Sr. Technical Lead — Alva Labs  
+### Sr. Engineering Manager — Alva Labs  
 **05/2022 – 02/2024** — Stockholm (remote), Sweden  
 
 - Identified engineering-wide issues and led initiatives to resolve them (e.g. developer experience issues)
@@ -65,7 +65,7 @@ Can provide references.
 
 ---
 
-### Technical Lead — Nanolike  
+### Engineering Manager — Nanolike  
 **11/2018 – 09/2020** — Toulouse (remote), France  
 
 - Designed backend roadmap and microservices architecture (Kafka, Docker, AWS)
