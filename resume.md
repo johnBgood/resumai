@@ -10,10 +10,10 @@
 
 ## Profile
 
-More than 15 years of experience in software development and technical leadership.  
-Self-learner, demonstrated problem-solving skills and adaptation to complex domains and codebases.  
-Autonomous, production- and customer-oriented, looking for growth and impact.  
-Experienced across both the IC and management tracks — deliberately versatile.
+Backend-focused Tech Lead with 15+ years of experience building and scaling distributed systems.  
+Track record of owning complex cross-team epics end-to-end — from architecture design to production delivery.  
+Strong hands-on contributor who can navigate unfamiliar codebases quickly and drive measurable impact.  
+Looking for a remote Tech Lead role where technical depth and ownership matter.
 
 ---
 
