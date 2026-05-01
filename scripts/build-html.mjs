@@ -146,7 +146,7 @@ const html = `<!DOCTYPE html>
     padding: 9mm 9mm 7mm 8mm;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 11px;
   }
 
   .section-title {
@@ -176,10 +176,10 @@ const html = `<!DOCTYPE html>
   .profile p {
     font-size: 9pt;
     color: var(--text-soft);
-    line-height: 1.5;
+    line-height: 1.6;
   }
 
-  .job { margin-bottom: 6px; }
+  .job { margin-bottom: 9px; }
   .job:last-child { margin-bottom: 0; }
 
   .job-header {
@@ -212,9 +212,9 @@ const html = `<!DOCTYPE html>
   .job ul li {
     font-size: 9pt;
     color: var(--text-soft);
-    padding: 0.5px 0 0.5px 11px;
+    padding: 1.5px 0 1.5px 11px;
     position: relative;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   .job ul li::before {
@@ -330,11 +330,11 @@ const html = `<!DOCTYPE html>
           <span class="job-badge">Feb 2024 – Present · Berlin (remote)</span>
         </div>
         <ul>
-          <li>Led P0 Job Worker Dashboard epic (3-person team, ~3 months) — became top committer on Core monorepo despite it not being primary focus</li>
-          <li>Achieved 30× CPU reduction and 10× I/O throughput improvement through performance engineering</li>
-          <li>Authored approved architecture proposal (Jobs Statistics API, engine-collected metrics); aligned Connectors, Core &amp; Console teams</li>
-          <li>Rebuilt release pipeline: automated triggering, test parallelization, flaky retries, Slack observability — near-zero manual steps</li>
-          <li>Tech lead for 5 engineers: mentoring, solution design, incident response, cross-team alignment</li>
+          <li>Led <strong>P0 Job Worker Dashboard</strong> epic (<strong>3-person team</strong>, ~3 months) — became <strong>top committer on the Core monorepo</strong> despite it not being primary focus</li>
+          <li>Achieved <strong>30× CPU reduction</strong> and <strong>10× I/O throughput</strong> improvement through performance engineering</li>
+          <li>Authored approved architecture proposal (<strong>Jobs Statistics API</strong>, engine-collected metrics); aligned Connectors, Core &amp; Console teams</li>
+          <li>Rebuilt release pipeline: automated triggering, test parallelization, flaky retries — <strong>near-zero manual steps</strong> per release</li>
+          <li>Tech lead for <strong>5 engineers</strong>: mentoring, solution design, incident response, cross-team alignment</li>
         </ul>
       </div>
 
@@ -344,8 +344,8 @@ const html = `<!DOCTYPE html>
           <span class="job-badge">May 2022 – Feb 2024 · Stockholm (remote)</span>
         </div>
         <ul>
-          <li>Resolved engineering-wide issues: developer experience, cross-team processes with design and support</li>
-          <li>Created system design interview process, improving hiring quality; worked with Terraform, GKE, PostgreSQL</li>
+          <li>Resolved engineering-wide issues: <strong>developer experience</strong>, broken cross-team processes with design and support</li>
+          <li>Created <strong>system design interview process</strong>, improving hiring quality; worked with Terraform, GKE, PostgreSQL</li>
         </ul>
       </div>
 
@@ -355,8 +355,7 @@ const html = `<!DOCTYPE html>
           <span class="job-badge">Sep 2020 – May 2022 · Toulouse (remote)</span>
         </div>
         <ul>
-          <li>Defined and executed product roadmap; built AWS infrastructure (Lambda, EC2, Cognito)</li>
-          <li>Developed full stack with Quarkus native (Java, Spring WebFlux)</li>
+          <li>Defined and executed <strong>product roadmap</strong>; built full stack on <strong>AWS</strong> (Lambda, EC2, Cognito) with Quarkus native (Java, Spring WebFlux)</li>
         </ul>
       </div>
 
@@ -366,7 +365,7 @@ const html = `<!DOCTYPE html>
           <span class="job-badge">Nov 2018 – Sep 2020 · Toulouse (remote)</span>
         </div>
         <ul>
-          <li>Designed microservices architecture (Kafka, Docker, AWS); managed team, costing, 1:1s, sprints</li>
+          <li>Designed <strong>microservices architecture</strong> (Kafka, Docker, AWS); owned product development, team organisation, and sprint execution</li>
         </ul>
       </div>
 
@@ -376,8 +375,8 @@ const html = `<!DOCTYPE html>
           <span class="job-badge">Sep 2013 – Nov 2018 · Toulouse</span>
         </div>
         <ul>
-          <li>Designed scalable microservices (Java, MongoDB, Prometheus, Grafana) handling 5B metrics/day</li>
-          <li>Reduced bandwidth by 50%, increased monitoring capacity ×10; designed and implemented RBAC system</li>
+          <li>Designed scalable microservices (Java, MongoDB, Prometheus, Grafana) handling <strong>5B metrics/day</strong></li>
+          <li>Reduced bandwidth by <strong>50%</strong>, increased monitoring capacity <strong>×10</strong>; designed and implemented <strong>RBAC system</strong></li>
         </ul>
       </div>
     </section>
