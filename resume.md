@@ -4,7 +4,7 @@
 - **Phone:** +33637030664  
 - **Email:** jonathan.roques@gmail.com  
 - **GitHub:** github.com/johnBgood  
-- **LinkedIn:** linkedin.com/in/jonathan-roques-43941542  
+- **LinkedIn:** linkedin.com/in/jonathan-roques-43941542
 
 ---
 
