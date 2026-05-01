@@ -3,8 +3,7 @@ import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const root = join(__dirname, '..')
-const theme = process.argv[2] ?? 'minimal'
+const root = join(__dirname, '../..')
 
 const photoB64 = readFileSync(join(root, 'public/photo.jpeg')).toString('base64')
 const photoSrc = `data:image/jpeg;base64,${photoB64}`
@@ -432,5 +431,5 @@ const html = `<!DOCTYPE html>
 </body>
 </html>`
 
-writeFileSync(join(root, 'generated', `resume-${theme}.html`), html)
-console.log(`HTML written to generated/resume-${theme}.html`)
+writeFileSync(join(root, 'generated/base/resume.html'), html)
+console.log('HTML written to generated/base/resume.html')

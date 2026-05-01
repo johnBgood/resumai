@@ -3,11 +3,11 @@ import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const root = join(__dirname, '..')
+const root = join(__dirname, '../../..')
 
 const photoB64 = readFileSync(join(root, 'public/photo.jpeg')).toString('base64')
 const photoSrc = `data:image/jpeg;base64,${photoB64}`
-const baseBuilder = readFileSync(join(root, 'scripts/build-html.mjs'), 'utf-8')
+const baseBuilder = readFileSync(join(root, 'resumes/base/build-html.mjs'), 'utf-8')
 const baseStyles = baseBuilder.match(/<style>([\s\S]*?)<\/style>/)?.[1]
 
 if (!baseStyles) {
@@ -192,6 +192,6 @@ ${baseStyles}
 </body>
 </html>`
 
-writeFileSync(join(root, 'generated/resume-kestra.html'), html)
-console.log('HTML written to generated/resume-kestra.html')
+writeFileSync(join(root, 'generated/kestra/resume.html'), html)
+console.log('HTML written to generated/kestra/resume.html')
 
