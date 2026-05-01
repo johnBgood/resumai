@@ -4,9 +4,13 @@ import puppeteer from 'puppeteer'
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
-  const theme = searchParams.get('theme') ?? 'minimal'
+  const theme = searchParams.get('theme') ?? 'base'
 
-  const htmlPath = join(process.cwd(), 'generated', `resume-${theme}.html`)
+  // Hand-crafted resumes live under generated/<slug>/resume.html;
+  // AI-generated ones use the legacy flat path generated/resume-<theme>.html.
+  const slugPath = join(process.cwd(), 'generated', theme, 'resume.html')
+  const legacyPath = join(process.cwd(), 'generated', `resume-${theme}.html`)
+  const htmlPath = existsSync(slugPath) ? slugPath : legacyPath
 
   if (!existsSync(htmlPath)) {
     return Response.json(

@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     return Response.json({ error: 'Unknown theme' }, { status: 400 })
   }
 
-  const markdown = readFileSync(join(process.cwd(), 'resume.md'), 'utf-8')
+  const markdown = readFileSync(join(process.cwd(), 'resumes/base/resume.md'), 'utf-8')
 
   const message = await client.messages.create({
     model: 'claude-opus-4-7',

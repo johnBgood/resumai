@@ -6,9 +6,9 @@ import { fileURLToPath } from 'url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
 
-const theme = process.argv[2] ?? 'minimal'
-const htmlPath = join(root, 'generated', `resume-${theme}.html`)
-const pdfPath = join(root, 'generated', `resume-${theme}.pdf`)
+const theme = process.argv[2] ?? 'base'
+const htmlPath = join(root, 'generated', theme, 'resume.html')
+const pdfPath = join(root, 'generated', theme, 'resume.pdf')
 
 const html = readFileSync(htmlPath, 'utf-8')
 
