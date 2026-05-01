@@ -58,7 +58,7 @@ Looking for a remote Tech Lead role where technical depth and ownership matter.
 
 ---
 
-### Co-founder & CTO — Clozzle  
+### Co-founder & Tech Lead — Clozzle  
 **09/2020 – 05/2022** — Toulouse (remote), France  
 *Real estate SaaS startup — tools for property professionals*  
 

@@ -380,7 +380,7 @@ const html = `<!DOCTYPE html>
 
       <div class="job">
         <div class="job-header">
-          <span class="job-title">Co-founder &amp; CTO — <span class="job-company">Clozzle</span></span>
+          <span class="job-title">Co-founder &amp; Tech Lead — <span class="job-company">Clozzle</span></span>
           <span class="job-badge">Sep 2020 – May 2022 <span class="badge-sep">·</span> <span class="badge-item">${iconPin}Toulouse</span> <span class="badge-sep">·</span> <span class="badge-item">${iconGlobe}Remote</span></span>
         </div>
         <div class="job-desc">Real estate SaaS startup — tools for property professionals</div>
