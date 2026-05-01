@@ -17,8 +17,8 @@ resumes/
     build-html.mjs     ← base HTML builder
   applications/
     kestra/
-      resume.md        ← Kestra-tailored resume Markdown
-      build-html.mjs   ← Kestra HTML builder
+      kestra-resume.md        ← Kestra-tailored resume Markdown
+      kestra-build-html.mjs   ← Kestra HTML builder
 generated/
   base/
     resume.html
@@ -53,7 +53,7 @@ generated/base/resume.pdf
 From the repository root:
 
 ```zsh
-node resumes/applications/kestra/build-html.mjs
+node resumes/applications/kestra/kestra-build-html.mjs
 node scripts/generate-pdf.mjs kestra
 ```
 
@@ -83,7 +83,7 @@ Use lowercase kebab-case slugs, e.g. `kestra`, `acme-platform-lead`, `datadog-ba
 1. Create the tailored Markdown source:
 
    ```text
-   resumes/applications/<slug>/resume.md
+   resumes/applications/<slug>/<slug>-resume.md
    ```
 
 2. Start from the base resume and tailor only what matters for the role:
@@ -96,10 +96,10 @@ Use lowercase kebab-case slugs, e.g. `kestra`, `acme-platform-lead`, `datadog-ba
 3. Create a static builder:
 
    ```text
-   resumes/applications/<slug>/build-html.mjs
+   resumes/applications/<slug>/<slug>-build-html.mjs
    ```
 
-   Use `resumes/applications/kestra/build-html.mjs` as the template. Copy the reviewed Markdown content into the HTML structure, then tune emphasis (`<strong>...</strong>`) and line length for readability. Set `root = join(__dirname, '../../..')` to point to the project root.
+   Use `resumes/applications/kestra/kestra-build-html.mjs` as the template. Copy the reviewed Markdown content into the HTML structure, then tune emphasis (`<strong>...</strong>`) and line length for readability. Set `root = join(__dirname, '../../..')` to point to the project root.
 
 4. The builder should write:
 
