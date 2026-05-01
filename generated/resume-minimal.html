@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jonathan Roques — Resume</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: #1a1a1a;
+    background: #fff;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 14mm 18mm 14mm 18mm;
+  }
+
+  /* ── Header ── */
+  .header {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1.5px solid #1a1a1a;
+  }
+
+  .header h1 {
+    font-family: Georgia, serif;
+    font-size: 22pt;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+  }
+
+  .header-meta {
+    display: flex;
+    gap: 24px;
+    font-size: 9pt;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+  }
+
+  /* ── Section ── */
+  .section {
+    margin-bottom: 14px;
+  }
+
+  .section-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7.5pt;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 7px;
+    padding-bottom: 3px;
+    border-bottom: 0.5px solid #ddd;
+  }
+
+  /* ── Profile ── */
+  .profile p {
+    font-size: 10pt;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* ── Skills ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 32px;
+  }
+
+  .skill-group-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 3px;
+  }
+
+  .skills-grid ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .skills-grid ul li {
+    font-size: 9.5pt;
+    color: #444;
+    padding: 1px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .skills-grid ul li::before {
+    content: '–  ';
+    color: #aaa;
+  }
+
+  /* ── Experience ── */
+  .job {
+    margin-bottom: 12px;
+  }
+
+  .job:last-child {
+    margin-bottom: 0;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+
+  .job-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.5pt;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+
+  .job-period {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.5pt;
+    color: #888;
+    white-space: nowrap;
+    margin-left: 12px;
+  }
+
+  .job-location {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.5pt;
+    color: #888;
+    margin-bottom: 4px;
+  }
+
+  .job ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .job ul li {
+    font-size: 9.5pt;
+    color: #333;
+    padding: 1px 0 1px 14px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .job ul li::before {
+    content: '·';
+    position: absolute;
+    left: 3px;
+    color: #aaa;
+    font-size: 11pt;
+    line-height: 1.35;
+  }
+
+  /* ── Education ── */
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .edu-degree {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10.5pt;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+
+  .edu-period {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.5pt;
+    color: #888;
+  }
+
+  .edu-field {
+    font-size: 9.5pt;
+    color: #444;
+    margin-top: 1px;
+  }
+
+  .edu-school {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.5pt;
+    color: #888;
+    margin-top: 1px;
+  }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { padding: 12mm 16mm; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Jonathan Roques</h1>
+    <div class="header-meta">
+      <span>jonathan.roques@gmail.com</span>
+      <span>+33 6 37 03 06 64</span>
+      <span>Born 25 Nov 1985</span>
+    </div>
+  </header>
+
+  <!-- Profile -->
+  <section class="section profile">
+    <div class="section-title">Profile</div>
+    <p>More than 15 years of experience in software development and technical leadership. Self-learner with demonstrated problem-solving skills and adaptation to complex domains and codebases. Autonomous, production- and customer-oriented, looking for growth and impact. References available upon request.</p>
+  </section>
+
+  <!-- Skills -->
+  <section class="section">
+    <div class="section-title">Skills</div>
+    <div class="skills-grid">
+      <div>
+        <div class="skill-group-title">Technical</div>
+        <ul>
+          <li>Micro-services architecture</li>
+          <li>Cloud providers: GCP, AWS</li>
+          <li>Design patterns &amp; code quality</li>
+          <li>Problem solving</li>
+        </ul>
+      </div>
+      <div>
+        <div class="skill-group-title">Languages &amp; Frameworks</div>
+        <ul>
+          <li>Java · Spring (Boot, Cloud…)</li>
+          <li>JavaScript / TypeScript</li>
+          <li>Python</li>
+          <li>React</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Tech Lead, Engineering — Camunda</span>
+        <span class="job-period">Feb 2024 – Present</span>
+      </div>
+      <div class="job-location">Remote, France</div>
+      <ul>
+        <li>Led end-to-end delivery of the Job Worker Dashboard (P0 cross-team epic) with a 3-person team in ~3 months — became top committer on the Core monorepo despite it not being primary focus area</li>
+        <li>Achieved 30× CPU reduction and 10× I/O throughput improvement through targeted performance engineering</li>
+        <li>Authored the approved architecture proposal (Jobs Statistics API and engine-collected job metrics); led trade-off discussions across Connectors, Core, and Console teams</li>
+        <li>Rebuilt the Connectors release pipeline: automated triggering, test parallelization, flaky test retries, and Slack observability — near-zero manual intervention per release</li>
+        <li>Tech lead for a team of 5 engineers: mentoring, solution design support, incident response, and cross-team representation</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Sr. Technical Lead — Alva Labs</span>
+        <span class="job-period">May 2022 – Feb 2024</span>
+      </div>
+      <div class="job-location">Stockholm (remote), Sweden</div>
+      <ul>
+        <li>Identified engineering-wide issues and led initiatives to resolve them (e.g. developer experience)</li>
+        <li>Fixed broken cross-team processes with design and customer support teams</li>
+        <li>Created a system design interview process, improving hiring quality</li>
+        <li>Leveraged team members' strengths to maximise impact</li>
+        <li>Worked with Terraform, Kubernetes (GKE), and PostgreSQL</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Co-founder &amp; CTO — Clozzle</span>
+        <span class="job-period">Sep 2020 – May 2022</span>
+      </div>
+      <div class="job-location">Toulouse (remote), France</div>
+      <ul>
+        <li>Defined and executed the product roadmap over 1 year</li>
+        <li>Built infrastructure on AWS (Lambda, EC2, Cognito)</li>
+        <li>Developed frontend and backend using Quarkus native (Java, Spring WebFlux)</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Technical Lead — Nanolike</span>
+        <span class="job-period">Nov 2018 – Sep 2020</span>
+      </div>
+      <div class="job-location">Toulouse (remote), France</div>
+      <ul>
+        <li>Designed backend roadmap and microservices architecture (Kafka, Docker, AWS)</li>
+        <li>Managed product development, team organisation, costing, 1:1s, sprint execution</li>
+        <li>Maintained existing backend and delivered new features</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Software Architect — Sigfox</span>
+        <span class="job-period">Sep 2013 – Nov 2018</span>
+      </div>
+      <div class="job-location">Toulouse, France</div>
+      <ul>
+        <li>Designed scalable and highly available microservices architecture (Java, MongoDB, Prometheus, Grafana)</li>
+        <li>Reduced bandwidth consumption by 50% and increased device monitoring capacity ×10</li>
+        <li>Handled up to 5 billion metrics per day</li>
+        <li>Led architecture design, cost management, and system scalability</li>
+        <li>Managed critical systems: message reception, storage, and transfer</li>
+        <li>Designed and implemented RBAC system; trained team on new concepts</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-header">
+      <span class="edu-degree">Master's Degree — with distinction</span>
+      <span class="edu-period">2003 – 2008</span>
+    </div>
+    <div class="edu-field">Robotics, AI &amp; Software Engineering</div>
+    <div class="edu-school">IUP Paul Sabatier, Toulouse, France</div>
+  </section>
+
+</div>
+</body>
+</html>
